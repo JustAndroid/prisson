@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">prisson</string>
+
+    <string name="start_game_button">Начать</string>
+    <string name="close_game_button">Закрыть</string>
+    <string name="about_game_button">Про игру</string>
+    <string name="about_game">Закрыть</string>
+
+
+<!--    Login-->
+
+    <string name="login_label">Логин</string>
+    <string name="password_label">Пароль</string>
+    <string name="game_over">Вы Проиграли!</string>
+    <string name="game_win">Вы Выиграли!</string>
+    <string name="login_button_label">Войти</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="black">#000000</color>
+
+    <color name="healsBackground">#C1000000</color>
+
+    <color name="loginViewBackground">#B4FFFFFF</color>
+
+    <color name="fightButtons">#E6BAEC80</color>
+    <color name="disableFightButtons">#B4756E6E</color>
+</resources>
