@@ -66,7 +66,7 @@ abstract class BaseSurfaceView(context: Context, attrs: AttributeSet) : SurfaceV
                     if (sleepTime > 0)
                         sleep(sleepTime)
                     else
-                        sleep(10)
+                        sleep(50)
 
 
                 } finally {

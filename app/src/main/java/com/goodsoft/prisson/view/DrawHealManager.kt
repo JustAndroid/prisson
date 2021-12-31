@@ -5,6 +5,7 @@ import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Rect
+import androidx.core.content.ContextCompat
 import com.goodsoft.prisson.R
 
 /**
@@ -19,7 +20,7 @@ fun Draka.drawHeals(context: Context, canvas: Canvas) {
     val background = Rect()
     background.set(0, 0, canvas.width, 150)
     val backgroundPaint = Paint()
-    backgroundPaint.color = context.getColor(R.color.healsBackground)
+    backgroundPaint.color = ContextCompat.getColor(context,R.color.healsBackground)
     backgroundPaint.style = Paint.Style.FILL
     canvas.drawRect(background, backgroundPaint)
 

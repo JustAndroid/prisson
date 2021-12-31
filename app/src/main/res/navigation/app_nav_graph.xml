@@ -2,8 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/app_nav_graph"
-    app:startDestination="@id/loginFragment">
-
+    app:startDestination="@id/startScreenFragment">
 
     <fragment
         android:id="@+id/startScreenFragment"
@@ -20,13 +19,32 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.goodsoft.prisson.main.login.LoginFragment"
-        android:label="LoginFragment" />
+        android:label="LoginFragment" >
+
+        <action
+            android:id="@+id/action_loginFragment_to_fightersListFragment"
+            app:destination="@id/fightersListFragment" />
+    </fragment>
     <fragment
         android:id="@+id/registrationFragment"
         android:name="com.goodsoft.prisson.main.registration.RegistrationFragment"
-        android:label="RegistrationFragment" />
+        android:label="RegistrationFragment" >
+
+        <action
+            android:id="@+id/action_registrationFragment_to_fightersListFragment"
+            app:destination="@id/fightersListFragment" />
+    </fragment>
     <fragment
         android:id="@+id/fightFragment"
         android:name="com.goodsoft.prisson.main.fight.FightFragment"
         android:label="FightFragment" />
+
+    <fragment
+        android:id="@+id/fightersListFragment"
+        android:name="com.goodsoft.prisson.main.list.FightersListFragment"
+        android:label="FightFragment" >
+        <action
+            android:id="@+id/action_fightersListFragment_to_fightFragment"
+            app:destination="@id/fightFragment" />
+    </fragment>
 </navigation>

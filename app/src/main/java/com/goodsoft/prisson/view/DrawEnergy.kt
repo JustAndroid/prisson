@@ -5,6 +5,7 @@ import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Rect
+import androidx.core.content.ContextCompat
 import com.goodsoft.prisson.R
 
 /**
@@ -16,7 +17,7 @@ fun Draka.drawEnergy(context: Context, canvas: Canvas) {
     val background = Rect()
     background.set(0, 150, canvas.width, 230)
     val backgroundPaint = Paint()
-    backgroundPaint.color = context.getColor(R.color.healsBackground)
+    backgroundPaint.color = ContextCompat.getColor(context,R.color.healsBackground)
     backgroundPaint.style = Paint.Style.FILL
     canvas.drawRect(background, backgroundPaint)
 

@@ -75,7 +75,7 @@ class Draka(context: Context, attrs: AttributeSet) : BaseSurfaceView(context, at
     }
 
     fun setClick() {
-        users[RIGHT].whatDo = WhatDo.HEND_FIGHT
+        users[LEFT].whatDo = WhatDo.HEND_FIGHT
         hit?.start()
     }
 
